@@ -1,0 +1,51 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Forrest Gump",
+      "year": 1994,
+      "description": "Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events.All he wants now is to be reunited with his childhood sweetheart, Jenny.",
+      "image": "https://i.ytimg.com/vi/hf_lCA-T99c/movieposter_en.jpg",
+      "watched": true
+    },
+    {
+      "id": 2,
+      "name": "Yesterday",
+      "year": 2019,
+      "description": "Jack, a struggling musician, meets with an accident during a blackout and wakes up to find out that only he remembers The Beatles. Later, he starts singing the band's songs to gain fame.",
+      "image": "https://fr.web.img3.acsta.net/pictures/19/06/18/10/50/4755889.jpg",
+      "watched": true
+    },
+    {
+      "id": 3,
+      "name": "Bohemian Rhapsody",
+      "year": 2018,
+      "description": "With his impeccable vocal abilities, Freddie Mercury and his rock band, Queen, achieve superstardom. However, amidst his skyrocketing success, he grapples with his ego, sexuality and a fatal illness.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_FMjpg_UX1000_.jpg",
+      "watched": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userName": "dolphin",
+      "pass": "137",
+      "name": "nisan",
+      "email": "nisan@gmail.com"
+    },
+    {
+      "id": 2,
+      "userName": "tiger",
+      "pass": "123",
+      "name": "noam",
+      "email": "noam@gmail.com"
+    },
+    {
+      "id": 3,
+      "userName": "bob",
+      "pass": "246",
+      "name": "dor",
+      "email": "dor@gmail.com"
+    }
+  ]
+}

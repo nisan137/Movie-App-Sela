@@ -1,0 +1,11 @@
+<ng-container>
+    <div class="cente">
+        <details>
+            <summary>add movie</summary>
+            <app-movie-editor (onSubmit)="addNewMovie($event)"></app-movie-editor>
+        </details>
+        <div *ngFor="let m of movies">
+            <app-movie-item (onDelete)="deleteMovie($event)" [movie]="m"></app-movie-item>
+        </div>
+    </div>
+</ng-container>

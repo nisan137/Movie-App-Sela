@@ -1,0 +1,27 @@
+<div class="cente btn-warning">
+  <div >
+    <label class="label m-1 lead">
+      User Name:
+      <input class="form-control" type="text" [(ngModel)]="userEdit.userName" />
+    </label>
+
+    <label class="label m-1 lead">
+      Password:
+      <input class="form-control" type="text" [(ngModel)]="userEdit.pass" />
+    </label>
+
+    <label class="label m-1 lead">
+      Name:
+      <input class="form-control" type="text" [(ngModel)]="userEdit.name" />
+    </label>
+
+    <label class="label m-1 lead">
+      Email:
+      <input class="form-control" type="text" [(ngModel)]="userEdit.email" />
+    </label>
+
+    <button class="btn btn-primary" type="submit" (click)="submitClicked()">
+      Submit
+    </button>
+  </div>
+</div>

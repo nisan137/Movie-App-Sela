@@ -1,0 +1,25 @@
+<div class="text-center">
+  <div>
+    <label class="label m-1 lead">
+      Name: <input class="form-control" type="text" [(ngModel)]="movie.name" />
+    </label>
+    <label class="label m-1 lead">
+      Year:
+      <input class="form-control" type="number" [(ngModel)]="movie.year" />
+    </label>
+    <label class="label m-1 lead">
+      Description:
+      <input class="form-control" type="text" [(ngModel)]="movie.description" />
+    </label>
+    <label class="label m-1 lead">
+      Image:
+      <input class="form-control" type="text" [(ngModel)]="movie.image" />
+    </label>
+    <label class="label m-1 lead">
+      Watched: <input type="checkbox" [(ngModel)]="movie.watched" />
+    </label>
+    <div>
+      <button (click)="submit()">submit</button>
+    </div>
+  </div>
+</div>

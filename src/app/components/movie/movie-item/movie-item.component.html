@@ -1,0 +1,19 @@
+<div class="container m-2 p-2">
+  <div class="text-center border border-success">
+    <h3 class="h3 text-info">{{ movie?.name }}</h3>
+    <img [src]="movie?.image" width="200" alt="" />
+    <p class="h4" [class]="movie?.watched ? 'watched' : 'noWatched'">
+      Watched: {{ movie?.watched ? "Yes" : "No" }}
+    </p>
+    <h5 class="h5 text-">Release: {{ movie?.year }}</h5>
+    <p class="h6">Description: {{ movie?.description }}</p>
+    <p>
+        <button (click)="delete()">delete</button>
+    </p>
+  </div>
+  <br />
+  <details class="btn btn-info">
+    <summary>Edit {{ movie?.name }}</summary>
+    <app-movie-editor [movie]="movie!" (onSubmit)="editMovie($event)"></app-movie-editor>
+  </details>
+</div>

@@ -1,0 +1,15 @@
+<div class="cente">
+  <details class="btn btn-warning">
+    <summary>Add User</summary>
+    <app-user-editor (onSubmit)="addUser($event)"></app-user-editor>
+  </details>
+
+  <div *ngFor="let u of users">
+    <app-user
+      [user]="u"
+      (onDelete)="onDeleteHandler($event)"
+      (onDuplicate)="onDuplicateHandler($event)"
+    >
+    </app-user>
+  </div>
+</div>

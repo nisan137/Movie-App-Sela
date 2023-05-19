@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="text-center border border-success m-2 p-2 cente">
+    <div class="row">
+      <div class="col label m-1 p-1 lead">
+        User Name:
+        <div>{{ user.userName }}</div>
+      </div>
+      <div class="col m-1 lead">
+        pass:
+        <div>{{ user.pass }}</div>
+      </div>
+      <div class="col m-1 lead">
+        Name:
+        <div>{{ user.name }}</div>
+      </div>
+      <div class="col m-1 lead">
+        Email:
+        <div>{{ user.email }}</div>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-danger m-2" (click)="deleteClicked()">
+        Delete
+      </button>
+      <button class="btn btn-info m-2" (click)="duplicateClicked()">
+        Duplicate
+      </button>
+      <div class="inline">
+        <!-- <button (click)="show = !show" class="btn btn-warning m-1">Edit</button>
+               -->
+               <details class="btn btn-warning m-1">
+                <summary>Edit</summary>
+                <app-user-editor (onSubmit)="editUser($event)" [user]="user"></app-user-editor>
+               </details>
+      </div>
+    </div>
+  </div>
+</div>
